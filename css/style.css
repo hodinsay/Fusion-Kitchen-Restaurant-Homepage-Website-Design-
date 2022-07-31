@@ -132,6 +132,44 @@ nav ul li a:hover::before{
      margin-top: 70px;
      box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
 }
+
+.menu-icon{
+     display: none;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media only screen and (max-width: 1000px){
+     nav ul{
+          width: 40%;
+          background: #fff;
+          position: absolute;
+          top: 75px;
+          right: -150px;
+          z-index: 2;
+          display: none;
+     }
+
+     nav ul.active{
+          display: block;
+          transition: 0.5s;
+     }
+
+     nav ul li{
+          display: block;
+     }
+
+     nav ul li a{
+          color: #333;
+     }
+
+     .menu-icon{
+          display: block;
+          cursor: pointer;
+     }
+
+     .col{
+          flex-basis: 100%;
+     }
+}
